@@ -17,4 +17,4 @@ The training of a network happens during the so-called [backpropagation](https:
 ##  Degradation Problem in Neural Network
 as the depth of a neural network increases ,the performance of the network on the training data saturates and then starts to degrade.
 # Residual Blocks
-	![[Residual Networks (ResNet)-2.png]]
+![[Residual Networks (ResNet)-2.png]]
