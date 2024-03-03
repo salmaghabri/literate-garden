@@ -1,6 +1,6 @@
 [Multitask learning for large-scale semantic change detection - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S1077314219300992?via%3Dihub)
 # 1. Intro
-In this paper we propose a versatile supervised learning method to perform pixel-level change detection from image pairs based on state-of-the-art computer vision ideas. The proposed method is able to perform both binary and semantic change detection using very high resolution (VHR) images.
+In this paper we propose a versatile supervised learning method to perform pixel-level change detection from image pairs based on state-of-the-art computer vision ideas. The proposed method is able to perform **both** binary and semantic change detection using very high resolution (VHR) images.
 1. binary CD 
 attempts to identify which pixels correspond to areas where changes have occurred,
 2. semantic CD
@@ -142,7 +142,8 @@ Sequential training
 ![[Pasted image 20240303172641.png]]
 This way, the change detection branch learns to use the predicted land cover information to help to detect changes without affecting land cover mapping performance
 # 5. Results
-![[Pasted image 20240303172721.png]]
+
 ## 5.1. Multispectral change detection
 - As expected, the residual extension of the FC-EF architecture outperformed all previously proposed architectures. The difference was noted on both the RGB and the multispectral cases.
 - On the RGB case, the improvement was of such magnitude that the change detection performance on RGB images almost matched the performance on multispectral images.
+![[Pasted image 20240303172721.png]]

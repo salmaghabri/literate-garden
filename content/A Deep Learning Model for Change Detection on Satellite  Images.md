@@ -1,4 +1,15 @@
 In this paper, we present a method proposed in [[Multitask learning for large-scale semantic change detection]] which uses a convolutional neural network for change detection on the OSCD dataset.
+# Intro
+- The changes to be analyzed can be various: 
+	- cloud detection, 
+	- appearance of roads and buildings,
+	- deforestation monitoring 
+	- or agricultural crop monitoring.
+- we consider two co-registered images I1 and I2 of the same area and of the same size, N ×M pixels, and we want to compute a change map CM
+- data from the Sentinel-2 satellite, with images with a spatial resolution between 10 m and 60 m.
+- CM is a binary map where the value of a pixel is 1 if a change between I1 and I2 is detected and 0 otherwise.
+- We will use the Onera Satellite Change Detection (OSCD) dataset, which is already used for testing deep learning methods for the change detection problem.
+
 # Plan 
 1. the algorithm and the dataset on which it was trained and tested.
 2. we report some experiments and tests we performed to evaluate the algorithm. In particular, we present other tests than the one already included in the OSCD dataset. 
@@ -9,7 +20,7 @@ In this paper, we present a method proposed in [[Multitask learning for large-sc
 - based on the classical [[U-Net]] model 
 ## pre-processing
 1. The pair of images are normalized by their mean and standard deviation.
-2. the images are concatenated along the spectral axis, meaning that each image of the pair is treated as a different color channel. ( early fusion).
+2. the images are concatenated along the spectral axis, meaning that each image of the pair is treated as a different color channel. ( **early fusion**).
 ## Skip Connections
 - [[skip connections]] help to solve the degradation problem, induced by the encoder-decoder architecture, by linking together the layers with the same subsampling scale in the encoder part and the decoder part of the network.
 - **Skip connections** also allow to combine the abstract information of the last layers and the spatial details contained in the first layers.
