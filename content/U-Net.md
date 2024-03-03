@@ -1,5 +1,5 @@
 ---
-source: https://arxiv.org/pdf/1505.04597.pdf
+source: https://medium.com/@keremturgutlu/semantic-segmentation-u-net-part-1-d8d6f6005066
 paper: https://arxiv.org/pdf/1505.04597.pdf
 ---
 # enjeux
@@ -10,8 +10,9 @@ paper: https://arxiv.org/pdf/1505.04597.pdf
 U-net architecture. Blue boxes represent multi-channel feature maps, while while boxes represent copied feature maps. The arrows of different colors represent different operations
 </legend>
 
-# First part:
-[[U-Net Convolutional Networks for Biomedical Image Segmentation#2 Network Architecture#a contracting path (left side)]]
+# First part
+[[U-Net Convolutional Networks for Biomedical Image Segmentation]]
+https://medium.com/@keremturgutlu/semantic-segmentation-u-net-part-1-d8d6f6005066
 -  It usually is a pre-trained classification network like VGG/ResNet
  called :
  - down 

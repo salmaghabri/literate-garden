@@ -14,7 +14,7 @@ https://d2l.ai/chapter_computer-vision/fcn.html
 - Re-purpose imagenet pretrained networks for segmentation
 - Upsample using _deconvolutional_ layers
 - Introduce skip connections to improve over the coarseness of upsampling
-# Summery
+# Summary
 **Fully Convolutional Networks**, or **FCNs**, are an architecture used mainly for [[Semantic Segmentation]]. They employ solely locally connected layers, such as [convolution](https://paperswithcode.com/method/convolution), [[pooling]] and [[upsampling]]. Avoiding the use of dense layers means less parameters (making the networks faster to train). It also means an FCN can work for variable image sizes given all connections are local.
 
 The network consists of a downsampling path, used to extract and interpret the context, and an upsampling path, which allows for localization.
